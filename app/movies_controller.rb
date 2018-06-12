@@ -64,9 +64,9 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick"
   Movie.create(title: "Awesome Flick")
-  __
-  __
-  __
+  movie = Movie.update(title: "Even Awesomer Flick")
+  movie.save
+	movie
 end
 
 def can_update_using_update_method
